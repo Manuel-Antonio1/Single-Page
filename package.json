@@ -1,0 +1,23 @@
+{
+  "name": "single-page",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "JavaScript"
+  ],
+  "homepage": "https://github.com/Manuel-Antonio1/Single-Page#readme",
+  "bugs": {
+    "url": "https://github.com/Manuel-Antonio1/Single-Page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manuel-Antonio1/Single-Page.git"
+  },
+  "license": "MIT",
+  "author": "Manuel Antonio",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
