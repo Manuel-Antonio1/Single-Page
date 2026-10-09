@@ -18,7 +18,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build":"webpack --mode production",
+    "start":"webpack-dev-server --open --mode development"
   },
   "devDependencies": {
     "@babel/core": "^8.0.7",

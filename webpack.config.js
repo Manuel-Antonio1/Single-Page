@@ -24,12 +24,11 @@ module.exports ={
             }
         ]
     },
-    plugins:
-        new HtmlWebpackPlugin([
-        {
-            inject:true,
-            Template:'./public/index.html',
-            filename:'./index.html',
-        }
-    ])
+     plugins: [ // Corregido: Ahora es un arreglo []
+        new HtmlWebpackPlugin({
+            inject: true,
+            template: './public/index.html', // Corregido a minúscula
+            filename: './index.html',
+        })
+    ]
 }
