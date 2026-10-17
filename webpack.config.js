@@ -1,7 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { resolve } = require('dns')
-const { Template } = require('webpack')
+
 
 
 module.exports ={
@@ -17,18 +16,20 @@ module.exports ={
         rules:[
             {
                 test:/\.js?$/,
-                exclude:/node_module/,
+                exclude:/node_modules/,
                 use:{
-                    loader:'babel-loader',
+                    loader:'babel-loader'
                 }
             }
         ]
     },
-     plugins: [ // Corregido: Ahora es un arreglo []
-        new HtmlWebpackPlugin({
+     plugins: [
+        new HtmlWebpackPlugin(
+        {
             inject: true,
-            template: './public/index.html', // Corregido a minúscula
+            template: './public/index.html', 
             filename: './index.html',
-        })
+        }
+     ),
     ]
 }
